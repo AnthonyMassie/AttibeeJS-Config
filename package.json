@@ -1,8 +1,8 @@
 {
-  "name": "config",
+  "name": "@attibee/config",
   "version": "0.1.0",
   "description": "Configuration objects.",
-  "main": "index.js",
+  "main": "src/Config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Attibee/AttibeeJS-Config/issues"
   },
-  "homepage": "https://github.com/Attibee/AttibeeJS-Config#readme"
+  "homepage": "https://github.com/Attibee/AttibeeJS-Config#readme",
+  "dependencies": {
+    "d3": "^4.9.1"
+  }
 }
