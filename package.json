@@ -1,0 +1,23 @@
+{
+  "name": "config",
+  "version": "0.1.0",
+  "description": "Configuration objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Attibee/AttibeeJS-Config.git"
+  },
+  "keywords": [
+    "config",
+    "configuration"
+  ],
+  "author": "Attibee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Attibee/AttibeeJS-Config/issues"
+  },
+  "homepage": "https://github.com/Attibee/AttibeeJS-Config#readme"
+}
