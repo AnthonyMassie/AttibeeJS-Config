@@ -20,7 +20,5 @@
     "url": "https://github.com/Attibee/AttibeeJS-Config/issues"
   },
   "homepage": "https://github.com/Attibee/AttibeeJS-Config#readme",
-  "dependencies": {
-    "d3": "^4.9.1"
-  }
+  "dependencies": {}
 }
