@@ -1,8 +1,8 @@
 {
   "name": "@attibee/config",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.0",
   "description": "Configuration objects.",
-  "main": "src/Config.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
