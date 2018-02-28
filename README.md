@@ -10,9 +10,9 @@ values.
 ## Usage
 
 ```javascript
-import * as Config from '@attibee/config'
+import {default as Config} from '@attibee/config'
 
-var myConfig = new Config.Config();
+var myConfig = new Config();
 
 //if no value is set for foo, the default is bar
 myConfig.setDefaults({
