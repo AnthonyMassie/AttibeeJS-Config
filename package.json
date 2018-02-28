@@ -1,21 +1,23 @@
 {
   "name": "@attibee/config",
-  "version": "0.1.0-alpha.0",
-  "description": "Configuration objects.",
+  "version": "1.0.0",
+  "description": "Extendable object to handle object literal configuration and and filtering",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Attibee/AttibeeJS-Config.git"
   },
   "keywords": [
+    "attibee",
     "config",
     "configuration"
   ],
   "author": "Attibee",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Attibee/AttibeeJS-Config/issues"
   },
