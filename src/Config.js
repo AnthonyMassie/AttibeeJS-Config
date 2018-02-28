@@ -52,6 +52,14 @@ export default class Config {
     }
     
     /**
+     * Deletes the user-provided configuration key.
+     * @param {String} key the unique configuration key
+     */
+    delete(key) {
+       delete this.config[key];
+    }
+    
+    /**
     * Returns the configuration value given the unique key.
     * @param {String} key The config's unique key
     * @returns {Mixed} Returns the value of the config.
