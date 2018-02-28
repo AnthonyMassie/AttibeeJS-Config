@@ -1,6 +1,7 @@
 'use strict';
 
 import {KeyNotExist} from './exception/Exception'
+import {FilterFailed} from './exception/FilterFailed'
 
 export default class Config {
     constructor(config, defaults, filters) {
@@ -24,7 +25,7 @@ export default class Config {
      * @param {Mixed} value The value may be any type.
      * @return {Boolean} Returns true if the key's value was set, or false if the key's filter rejected the value.
      */
-    setConfig(key, value) {
+    set(key, value) {
         if(typeof key === 'string') {
             var filter = function() { return true; }; //default filter always returns true
 
@@ -37,7 +38,7 @@ export default class Config {
             if(filter(value)) {
                 this.config[key] = value;
             } else {
-                throw 'Filter failed.'
+                throw new FilterFailed(filter);
             }
         } else if(typeof key === 'object') {
             var config = key;
@@ -55,7 +56,7 @@ export default class Config {
     * @param {String} key The config's unique key
     * @returns {Mixed} Returns the value of the config.
     */
-    getConfig(key) {
+    get(key) {
        if(this.config.hasOwnProperty(key)) {
            return this.config[key];
        } else if(this.defaults.hasOwnProperty(key)) {
@@ -63,7 +64,7 @@ export default class Config {
        } else {
            throw new KeyNotExist(key);
        }
-   }
+    }
    
     /**
      * Set the filters. A filter is a callback that accepts the config's value
