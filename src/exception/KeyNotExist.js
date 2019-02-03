@@ -1,6 +1,6 @@
 'use strict';
 
-export default class KeyNotExist {
+class KeyNotExist {
     constructor(key) {
         this.key = key;
     }
@@ -9,3 +9,5 @@ export default class KeyNotExist {
         return "Config key '" + this.key + "' does not exist.";
     }
 }
+
+module.exports = KeyNotExist;

@@ -1,6 +1,6 @@
 {
   "name": "@attibee/config",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Extendable object to handle object literal configuration and and filtering",
   "main": "index.js",
   "scripts": {

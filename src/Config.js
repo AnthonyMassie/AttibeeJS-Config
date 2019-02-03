@@ -1,6 +1,6 @@
 'use strict';
 
-var KeyNotExist = require('./exception/Exception');
+var KeyNotExist = require('./exception/KeyNotExist');
 var FilterFailed = require('./exception/FilterFailed');
 
 class Config {

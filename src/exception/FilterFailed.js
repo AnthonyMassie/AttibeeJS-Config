@@ -1,6 +1,6 @@
 'use strict';
 
-export default class FilterFailed {
+class FilterFailed {
     constructor(filter) {
         this.message = filter.getMessage();
     }
@@ -9,3 +9,5 @@ export default class FilterFailed {
         return "Filter failed with message '" + this.key + "'";
     }
 }
+
+module.exports = FilterFailed;
