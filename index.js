@@ -1,5 +1,4 @@
-export {default as Exception} from './src/exception/Exception'
-    
-import Config from './src/config'
+'use strict';
 
-export default Config;
+module.exports = require('./src/config');
+module.exports.Exception = require('./src/exception/Exception');

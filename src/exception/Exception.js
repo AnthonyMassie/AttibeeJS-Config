@@ -1,2 +1,4 @@
-export {default as KeyNotExist} from './KeyNotExist'
-export {default as FilterFailed} from './FilterFailed'
+'use strict';
+
+module.exports.KeyNotExist = require('./KeyNotExist');
+module.exports.FilterFailed = require('./FilterFailed');

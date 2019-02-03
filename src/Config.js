@@ -1,9 +1,9 @@
 'use strict';
 
-import {KeyNotExist} from './exception/Exception'
-import {FilterFailed} from './exception/FilterFailed'
+var KeyNotExist = require('./exception/Exception');
+var FilterFailed = require('./exception/FilterFailed');
 
-export default class Config {
+class Config {
     constructor(config, defaults, filters) {
         this.config = config || {};
         this.defaults = defaults || {};
@@ -93,3 +93,5 @@ export default class Config {
         this.defaults = defaults;
     }
 }
+
+module.exports = Config;
